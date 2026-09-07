@@ -6,13 +6,13 @@ from config import OWNER_ID, BOT_USERNAME
 from Biolink import Biolink as app
 from Biolink.helper.database import add_user, add_chat
 
-START_IMG = "https://files.catbox.moe/05x8mv.jpg"
+START_IMG = "https://silabotov.ru/img/dfd87f81-c399-45fb-b4c1-80d64378d1d3.jpg"
 
 def get_start_caption(user):
     return f"""
 **ʜᴇʏ** {user.mention} 🥀
 
-🤖 I am a **Link Remover Bot**.
+🤖 I am a **Bio Link Remover Bot**.
 I delete messages with links and restrict users who have links in their bio.
 
 🚫 I also delete messages with **biolink**.
@@ -22,10 +22,10 @@ START_BUTTONS = InlineKeyboardMarkup([
     [InlineKeyboardButton("• ᴀᴅᴅ ᴍᴇ •", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
     [InlineKeyboardButton("• ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅ •", callback_data="show_help")],
     [
-        InlineKeyboardButton("• ʟᴏɢs •", url="https://t.me/networkxlog"),
-        InlineKeyboardButton("• ᴜᴘᴅᴀᴛᴇ •", url="https://t.me/shivang_xd")
+        InlineKeyboardButton("• ʟᴏɢs •", url="https://t.me/shona_support"),
+        InlineKeyboardButton("• ᴜᴘᴅᴀᴛᴇ •", url="https://t.me/shona_bots")
     ],
-    [InlineKeyboardButton("🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url="https://t.me/shivang_mishra_op")]
+    [InlineKeyboardButton("🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url="https://t.me/Thecderqueen")]
 ])
 
 PRIVATE_START_BUTTON = InlineKeyboardMarkup([
